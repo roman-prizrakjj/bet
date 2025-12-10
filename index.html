@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetBoom Streamers Battle 2026 | Магическая Академия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="magic-particles" id="particles"></div>
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- Fixed Header -->
+    <header class="magic-header" id="header">
+        <div class="header-scroll-bg"></div>
+        <div class="header-content">
+            <a href="#" class="logo">
+                <img src="assets/betboom-logo.svg" alt="BetBoom" class="logo-img">
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active" data-section="hero">Главная</a></li>
+                    <li><a href="#bets" class="nav-link" data-section="bets">Ставки</a></li>
+                    <li><a href="#results" class="nav-link" data-section="results">Результаты</a></li>
+                    <li><a href="#streamers" class="nav-link" data-section="streamers">Стримеры</a></li>
+                    <li><a href="#factions" class="nav-link" data-section="factions">Фракции</a></li>
+                    <li><a href="#rules" class="nav-link" data-section="rules">Правила</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu scroll-menu" id="mobileMenu">
+        <div class="scroll-top"></div>
+        <div class="scroll-content">
+            <ul class="mobile-nav-list">
+                <li><a href="#hero" class="mobile-nav-link">Главная</a></li>
+                <li><a href="#bets" class="mobile-nav-link">Ставки</a></li>
+                <li><a href="#results" class="mobile-nav-link">Результаты</a></li>
+                <li><a href="#streamers" class="mobile-nav-link">Стримеры</a></li>
+                <li><a href="#factions" class="mobile-nav-link">Фракции</a></li>
+                <li><a href="#rules" class="mobile-nav-link">Правила</a></li>
+            </ul>
+        </div>
+        <div class="scroll-bottom"></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg">
+                <div class="candles-left"></div>
+                <div class="candles-right"></div>
+                <div class="books-silhouette"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="tournament-logo">
+                    <img src="assets/tournament-logo.svg" alt="Streamers Battle 2026" class="tournament-logo-img">
+                </div>
+                
+                <h1 class="hero-title magic-reveal">
+                    <span class="title-line">BetBoom</span>
+                    <span class="title-line accent">Streamers Battle</span>
+                    <span class="title-line year">2026</span>
+                </h1>
+                
+                <p class="hero-subtitle magic-reveal">
+                    Восемь факультетов. Восемь команд стримеров. Одна магическая битва за славу и призовой фонд.
+                    Делай ставки, поддерживай любимцев и следи за эпическим противостоянием!
+                </p>
+
+                <!-- Magical Vessels Display -->
+                <div class="vessels-showcase">
+                    <div class="vessel-container" data-faculty="crimson">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #740001; --sand-height: 85%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Багряные Львы</span>
+                            <span class="faculty-rank"><span class="rank-icon">🏆</span> 1 место</span>
+                            <span class="faculty-score">12,450 очков</span>
+                        </div>
+                        <div class="vessel-particles"></div>
+                    </div>
+
+                    <div class="vessel-container" data-faculty="emerald">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #1a472a; --sand-height: 78%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Изумрудные Змеи</span>
+                            <span class="faculty-rank"><span class="rank-icon">🥈</span> 2 место</span>
+                            <span class="faculty-score">11,200 очков</span>
+                        </div>
+                    </div>
+
+                    <div class="vessel-container" data-faculty="sapphire">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #0e1a40; --sand-height: 72%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Сапфировые Орлы</span>
+                            <span class="faculty-rank"><span class="rank-icon">🥉</span> 3 место</span>
+                            <span class="faculty-score">10,850 очков</span>
+                        </div>
+                    </div>
+
+                    <div class="vessel-container" data-faculty="golden">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #ecb939; --sand-height: 65%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Золотые Барсуки</span>
+                            <span class="faculty-rank">4 место</span>
+                            <span class="faculty-score">9,500 очков</span>
+                        </div>
+                    </div>
+
+                    <div class="vessel-container" data-faculty="violet">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #5d00ff; --sand-height: 58%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Аметистовые Вороны</span>
+                            <span class="faculty-rank">5 место</span>
+                            <span class="faculty-score">8,720 очков</span>
+                        </div>
+                    </div>
+
+                    <div class="vessel-container" data-faculty="orange">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #ff6b00; --sand-height: 52%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Огненные Фениксы</span>
+                            <span class="faculty-rank">6 место</span>
+                            <span class="faculty-score">7,890 очков</span>
+                        </div>
+                    </div>
+
+                    <div class="vessel-container" data-faculty="mint">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #00ff88; --sand-height: 45%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Нефритовые Драконы</span>
+                            <span class="faculty-rank">7 место</span>
+                            <span class="faculty-score">6,340 очков</span>
+                        </div>
+                    </div>
+
+                    <div class="vessel-container" data-faculty="pink">
+                        <div class="vessel">
+                            <div class="vessel-glass">
+                                <div class="magic-sand" style="--sand-color: #ff0080; --sand-height: 38%;">
+                                    <div class="sand-glow"></div>
+                                    <div class="sand-particles"></div>
+                                </div>
+                            </div>
+                            <div class="vessel-base"></div>
+                        </div>
+                        <div class="vessel-info">
+                            <span class="faculty-name">Розовые Единороги</span>
+                            <span class="faculty-rank">8 место</span>
+                            <span class="faculty-score">5,120 очков</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="#bets" class="cta-button primary magic-glow">
+                        <span class="btn-icon">⚡</span>
+                        <span class="btn-text">Сделать ставку</span>
+                    </a>
+                    <a href="#results" class="cta-button secondary magic-glow">
+                        <span class="btn-icon">📜</span>
+                        <span class="btn-text">Смотреть результаты</span>
+                    </a>
+                    <a href="#streamers" class="cta-button tertiary magic-glow">
+                        <span class="btn-icon">🎭</span>
+                        <span class="btn-text">Смотреть стримеров</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Листай вниз</span>
+            </div>
+        </section>
+
+        <!-- Bets Section -->
+        <section class="bets-section section-reveal" id="bets">
+            <div class="section-bg stone-texture"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Магические Ставки</h2>
+                    <p class="section-subtitle">Выбери факультет и сделай ставку на победителя турнира</p>
+                </div>
+
+                <div class="bets-grid">
+                    <!-- Faculty Bet Card 1 -->
+                    <div class="bet-card magic-card" data-faculty="crimson">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #740001; --faculty-secondary: #d4af37;"></div>
+                                <span class="emblem-icon">🦁</span>
+                            </div>
+                            <h3 class="faculty-title">Багряные Львы</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">1.85</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">34%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">↑12</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Bet Card 2 -->
+                    <div class="bet-card magic-card" data-faculty="emerald">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #1a472a; --faculty-secondary: #c0c0c0;"></div>
+                                <span class="emblem-icon">🐍</span>
+                            </div>
+                            <h3 class="faculty-title">Изумрудные Змеи</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">2.10</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">28%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">↑8</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Bet Card 3 -->
+                    <div class="bet-card magic-card" data-faculty="sapphire">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #0e1a40; --faculty-secondary: #b08d57;"></div>
+                                <span class="emblem-icon">🦅</span>
+                            </div>
+                            <h3 class="faculty-title">Сапфировые Орлы</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">2.35</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">18%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">↓3</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Bet Card 4 -->
+                    <div class="bet-card magic-card" data-faculty="golden">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #ecb939; --faculty-secondary: #000000;"></div>
+                                <span class="emblem-icon">🦡</span>
+                            </div>
+                            <h3 class="faculty-title">Золотые Барсуки</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">3.50</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">8%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">→0</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Bet Card 5 -->
+                    <div class="bet-card magic-card" data-faculty="violet">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #5d00ff; --faculty-secondary: #00e1ff;"></div>
+                                <span class="emblem-icon">🐦‍⬛</span>
+                            </div>
+                            <h3 class="faculty-title">Аметистовые Вороны</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">4.20</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">5%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">↑2</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Bet Card 6 -->
+                    <div class="bet-card magic-card" data-faculty="orange">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #ff6b00; --faculty-secondary: #000000;"></div>
+                                <span class="emblem-icon">🔥</span>
+                            </div>
+                            <h3 class="faculty-title">Огненные Фениксы</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">5.00</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">4%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">↓1</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Bet Card 7 -->
+                    <div class="bet-card magic-card" data-faculty="mint">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #00ff88; --faculty-secondary: #0a1a2a;"></div>
+                                <span class="emblem-icon">🐉</span>
+                            </div>
+                            <h3 class="faculty-title">Нефритовые Драконы</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">6.50</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">2%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">↑1</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Bet Card 8 -->
+                    <div class="bet-card magic-card" data-faculty="pink">
+                        <div class="card-border"></div>
+                        <div class="card-inner">
+                            <div class="faculty-emblem">
+                                <div class="emblem-bg" style="--faculty-primary: #ff0080; --faculty-secondary: #ffffff;"></div>
+                                <span class="emblem-icon">🦄</span>
+                            </div>
+                            <h3 class="faculty-title">Розовые Единороги</h3>
+                            <div class="odds-display">
+                                <span class="odds-label">Коэффициент</span>
+                                <span class="odds-value">8.00</span>
+                            </div>
+                            <div class="bet-stats">
+                                <div class="stat">
+                                    <span class="stat-value">1%</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">→0</span>
+                                    <span class="stat-label">тренд</span>
+                                </div>
+                            </div>
+                            <button class="bet-button magic-glow">Сделать ставку</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular Bets Widget -->
+                <div class="popular-bets-widget">
+                    <h3 class="widget-title">🔥 Популярные ставки</h3>
+                    <div class="popular-bets-list">
+                        <div class="popular-bet-item">
+                            <span class="bet-icon" style="--color: #740001;">🦁</span>
+                            <span class="bet-name">Багряные Львы — Победитель</span>
+                            <span class="bet-odds">1.85</span>
+                        </div>
+                        <div class="popular-bet-item">
+                            <span class="bet-icon" style="--color: #1a472a;">🐍</span>
+                            <span class="bet-name">Изумрудные Змеи — Топ-2</span>
+                            <span class="bet-odds">1.45</span>
+                        </div>
+                        <div class="popular-bet-item">
+                            <span class="bet-icon" style="--color: #0e1a40;">🦅</span>
+                            <span class="bet-name">Сапфировые Орлы — Топ-3</span>
+                            <span class="bet-odds">1.30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 18+ Warning -->
+                <div class="age-warning">
+                    <div class="warning-badge">18+</div>
+                    <p class="warning-text">
+                        Ставки на спорт доступны только для лиц старше 18 лет. 
+                        Азартные игры могут вызывать зависимость. Играйте ответственно.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section section-reveal" id="results">
+            <div class="section-bg parchment-texture"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Результаты Турнира</h2>
+                    <p class="section-subtitle">Турнирная таблица магической академии</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="results-controls">
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">Все</button>
+                        <button class="filter-btn" data-filter="leaders">Лидеры</button>
+                        <button class="filter-btn" data-filter="rising">Растущие</button>
+                    </div>
+                    <button class="export-btn scroll-button" id="exportBtn">
+                        <span class="btn-icon">📜</span>
+                        <span>Сохранить как свиток</span>
+                    </button>
+                </div>
+
+                <!-- Parchment Table -->
+                <div class="parchment-scroll">
+                    <div class="scroll-ornament top-left"></div>
+                    <div class="scroll-ornament top-right"></div>
+                    <div class="scroll-ornament bottom-left"></div>
+                    <div class="scroll-ornament bottom-right"></div>
+                    
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th class="col-rank">Место</th>
+                                <th class="col-faculty">Факультет</th>
+                                <th class="col-score">Очки</th>
+                                <th class="col-streamers">Стримеры</th>
+                                <th class="col-trend">Динамика</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody">
+                            <tr class="result-row" data-faculty="crimson">
+                                <td class="col-rank">
+                                    <div class="rank-shield gold">1</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #740001;">
+                                        <span class="faculty-badge">🦁</span>
+                                        <span class="faculty-name">Багряные Львы</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="12450">12,450</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer1">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer1">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer2">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer2">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer3">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer3">
+                                        </div>
+                                        <div class="avatar-more">+2</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator up">
+                                        <span class="trend-arrow">▲</span>
+                                        <span class="trend-value">+1,200</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="result-row" data-faculty="emerald">
+                                <td class="col-rank">
+                                    <div class="rank-shield silver">2</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #1a472a;">
+                                        <span class="faculty-badge">🐍</span>
+                                        <span class="faculty-name">Изумрудные Змеи</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="11200">11,200</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer4">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer4">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer5">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer5">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer6">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer6">
+                                        </div>
+                                        <div class="avatar-more">+2</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator up">
+                                        <span class="trend-arrow">▲</span>
+                                        <span class="trend-value">+850</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="result-row" data-faculty="sapphire">
+                                <td class="col-rank">
+                                    <div class="rank-shield bronze">3</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #0e1a40;">
+                                        <span class="faculty-badge">🦅</span>
+                                        <span class="faculty-name">Сапфировые Орлы</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="10850">10,850</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer7">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer7">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer8">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer8">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer9">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer9">
+                                        </div>
+                                        <div class="avatar-more">+2</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator down">
+                                        <span class="trend-arrow">▼</span>
+                                        <span class="trend-value">-120</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="result-row" data-faculty="golden">
+                                <td class="col-rank">
+                                    <div class="rank-shield">4</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #ecb939;">
+                                        <span class="faculty-badge">🦡</span>
+                                        <span class="faculty-name">Золотые Барсуки</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="9500">9,500</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer10">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer10">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer11">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer11">
+                                        </div>
+                                        <div class="avatar-more">+3</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator stable">
+                                        <span class="trend-arrow">—</span>
+                                        <span class="trend-value">0</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="result-row" data-faculty="violet">
+                                <td class="col-rank">
+                                    <div class="rank-shield">5</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #5d00ff;">
+                                        <span class="faculty-badge">🐦‍⬛</span>
+                                        <span class="faculty-name">Аметистовые Вороны</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="8720">8,720</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer12">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer12">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer13">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer13">
+                                        </div>
+                                        <div class="avatar-more">+3</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator up">
+                                        <span class="trend-arrow">▲</span>
+                                        <span class="trend-value">+450</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="result-row" data-faculty="orange">
+                                <td class="col-rank">
+                                    <div class="rank-shield">6</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #ff6b00;">
+                                        <span class="faculty-badge">🔥</span>
+                                        <span class="faculty-name">Огненные Фениксы</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="7890">7,890</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer14">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer14">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer15">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer15">
+                                        </div>
+                                        <div class="avatar-more">+3</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator down">
+                                        <span class="trend-arrow">▼</span>
+                                        <span class="trend-value">-280</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="result-row" data-faculty="mint">
+                                <td class="col-rank">
+                                    <div class="rank-shield">7</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #00ff88;">
+                                        <span class="faculty-badge">🐉</span>
+                                        <span class="faculty-name">Нефритовые Драконы</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="6340">6,340</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer16">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer16">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer17">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer17">
+                                        </div>
+                                        <div class="avatar-more">+3</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator up">
+                                        <span class="trend-arrow">▲</span>
+                                        <span class="trend-value">+320</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="result-row" data-faculty="pink">
+                                <td class="col-rank">
+                                    <div class="rank-shield">8</div>
+                                </td>
+                                <td class="col-faculty">
+                                    <div class="faculty-cell" style="--faculty-color: #ff0080;">
+                                        <span class="faculty-badge">🦄</span>
+                                        <span class="faculty-name">Розовые Единороги</span>
+                                    </div>
+                                </td>
+                                <td class="col-score">
+                                    <span class="score-value" data-score="5120">5,120</span>
+                                </td>
+                                <td class="col-streamers">
+                                    <div class="streamers-avatars">
+                                        <div class="avatar-item" title="Streamer18">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer18">
+                                        </div>
+                                        <div class="avatar-item" title="Streamer19">
+                                            <img src="assets/avatars/avatar-placeholder.svg" alt="Streamer19">
+                                        </div>
+                                        <div class="avatar-more">+3</div>
+                                    </div>
+                                </td>
+                                <td class="col-trend">
+                                    <div class="trend-indicator stable">
+                                        <span class="trend-arrow">—</span>
+                                        <span class="trend-value">0</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile Results Cards -->
+                <div class="results-cards-mobile" id="resultsMobile">
+                    <!-- Cards generated by JS for mobile -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Streamers Section -->
+        <section class="streamers-section section-reveal" id="streamers">
+            <div class="section-bg castle-texture"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Стримеры Академии</h2>
+                    <p class="section-subtitle">Живые портреты магических чемпионов</p>
+                </div>
+
+                <!-- Streamers Filter -->
+                <div class="streamers-filter">
+                    <button class="filter-chip active" data-game="all">Все</button>
+                    <button class="filter-chip" data-game="cs2">CS2</button>
+                    <button class="filter-chip" data-game="dota2">Dota 2</button>
+                    <button class="filter-chip" data-game="valorant">Valorant</button>
+                    <button class="filter-chip" data-game="lol">League of Legends</button>
+                    <button class="filter-chip" data-game="fc2026">FC2026</button>
+                </div>
+
+                <!-- Streamers Grid -->
+                <div class="streamers-grid">
+                    <!-- Streamer Card 1 -->
+                    <div class="streamer-card portrait-frame" data-faculty="crimson" data-games="cs2,dota2">
+                        <div class="frame-ornament"></div>
+                        <div class="portrait-container">
+                            <div class="portrait-image">
+                                <img src="assets/streamers/streamer-placeholder.svg" alt="Streamer Name">
+                                <div class="portrait-animation"></div>
+                            </div>
+                            <div class="portrait-glow" style="--faculty-color: #740001;"></div>
+                        </div>
+                        <div class="streamer-info">
+                            <h3 class="streamer-name">MagicMaster</h3>
+                            <p class="streamer-nick">@magicmaster_pro</p>
+                            <div class="faculty-badge" style="--badge-color: #740001;">
+                                <span>🦁</span> Багряные Львы
+                            </div>
+                            <div class="games-list">
+                                <span class="game-tag">CS2</span>
+                                <span class="game-tag">Dota 2</span>
+                            </div>
+                            <div class="streamer-stats">
+                                <div class="stat-item">
+                                    <span class="stat-icon">💎</span>
+                                    <span class="stat-value">2,450</span>
+                                    <span class="stat-label">очков</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🔥</span>
+                                    <span class="stat-value">89%</span>
+                                    <span class="stat-label">поп.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🎯</span>
+                                    <span class="stat-value">1.2K</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link twitch" title="Twitch">📺</a>
+                                <a href="#" class="social-link youtube" title="YouTube">▶️</a>
+                                <a href="#" class="social-link telegram" title="Telegram">✈️</a>
+                            </div>
+                            <button class="support-btn magic-glow">
+                                <span>✨</span> Поддержать
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Streamer Card 2 -->
+                    <div class="streamer-card portrait-frame" data-faculty="emerald" data-games="valorant,lol">
+                        <div class="frame-ornament"></div>
+                        <div class="portrait-container">
+                            <div class="portrait-image">
+                                <img src="assets/streamers/streamer-placeholder.svg" alt="Streamer Name">
+                                <div class="portrait-animation"></div>
+                            </div>
+                            <div class="portrait-glow" style="--faculty-color: #1a472a;"></div>
+                        </div>
+                        <div class="streamer-info">
+                            <h3 class="streamer-name">SerpentQueen</h3>
+                            <p class="streamer-nick">@serpent_queen</p>
+                            <div class="faculty-badge" style="--badge-color: #1a472a;">
+                                <span>🐍</span> Изумрудные Змеи
+                            </div>
+                            <div class="games-list">
+                                <span class="game-tag">Valorant</span>
+                                <span class="game-tag">LoL</span>
+                            </div>
+                            <div class="streamer-stats">
+                                <div class="stat-item">
+                                    <span class="stat-icon">💎</span>
+                                    <span class="stat-value">2,180</span>
+                                    <span class="stat-label">очков</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🔥</span>
+                                    <span class="stat-value">85%</span>
+                                    <span class="stat-label">поп.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🎯</span>
+                                    <span class="stat-value">980</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link twitch" title="Twitch">📺</a>
+                                <a href="#" class="social-link youtube" title="YouTube">▶️</a>
+                                <a href="#" class="social-link telegram" title="Telegram">✈️</a>
+                            </div>
+                            <button class="support-btn magic-glow">
+                                <span>✨</span> Поддержать
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Streamer Card 3 -->
+                    <div class="streamer-card portrait-frame" data-faculty="sapphire" data-games="dota2,fc2026">
+                        <div class="frame-ornament"></div>
+                        <div class="portrait-container">
+                            <div class="portrait-image">
+                                <img src="assets/streamers/streamer-placeholder.svg" alt="Streamer Name">
+                                <div class="portrait-animation"></div>
+                            </div>
+                            <div class="portrait-glow" style="--faculty-color: #0e1a40;"></div>
+                        </div>
+                        <div class="streamer-info">
+                            <h3 class="streamer-name">EagleEye</h3>
+                            <p class="streamer-nick">@eagle_eye_stream</p>
+                            <div class="faculty-badge" style="--badge-color: #0e1a40;">
+                                <span>🦅</span> Сапфировые Орлы
+                            </div>
+                            <div class="games-list">
+                                <span class="game-tag">Dota 2</span>
+                                <span class="game-tag">FC2026</span>
+                            </div>
+                            <div class="streamer-stats">
+                                <div class="stat-item">
+                                    <span class="stat-icon">💎</span>
+                                    <span class="stat-value">1,950</span>
+                                    <span class="stat-label">очков</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🔥</span>
+                                    <span class="stat-value">78%</span>
+                                    <span class="stat-label">поп.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🎯</span>
+                                    <span class="stat-value">750</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link twitch" title="Twitch">📺</a>
+                                <a href="#" class="social-link youtube" title="YouTube">▶️</a>
+                                <a href="#" class="social-link telegram" title="Telegram">✈️</a>
+                            </div>
+                            <button class="support-btn magic-glow">
+                                <span>✨</span> Поддержать
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Streamer Card 4 -->
+                    <div class="streamer-card portrait-frame" data-faculty="violet" data-games="cs2,valorant">
+                        <div class="frame-ornament"></div>
+                        <div class="portrait-container">
+                            <div class="portrait-image">
+                                <img src="assets/streamers/streamer-placeholder.svg" alt="Streamer Name">
+                                <div class="portrait-animation"></div>
+                            </div>
+                            <div class="portrait-glow" style="--faculty-color: #5d00ff;"></div>
+                        </div>
+                        <div class="streamer-info">
+                            <h3 class="streamer-name">DarkRaven</h3>
+                            <p class="streamer-nick">@dark_raven_gg</p>
+                            <div class="faculty-badge" style="--badge-color: #5d00ff;">
+                                <span>🐦‍⬛</span> Аметистовые Вороны
+                            </div>
+                            <div class="games-list">
+                                <span class="game-tag">CS2</span>
+                                <span class="game-tag">Valorant</span>
+                            </div>
+                            <div class="streamer-stats">
+                                <div class="stat-item">
+                                    <span class="stat-icon">💎</span>
+                                    <span class="stat-value">1,720</span>
+                                    <span class="stat-label">очков</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🔥</span>
+                                    <span class="stat-value">72%</span>
+                                    <span class="stat-label">поп.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🎯</span>
+                                    <span class="stat-value">620</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link twitch" title="Twitch">📺</a>
+                                <a href="#" class="social-link youtube" title="YouTube">▶️</a>
+                                <a href="#" class="social-link telegram" title="Telegram">✈️</a>
+                            </div>
+                            <button class="support-btn magic-glow">
+                                <span>✨</span> Поддержать
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Streamer Card 5 -->
+                    <div class="streamer-card portrait-frame" data-faculty="orange" data-games="dota2,lol">
+                        <div class="frame-ornament"></div>
+                        <div class="portrait-container">
+                            <div class="portrait-image">
+                                <img src="assets/streamers/streamer-placeholder.svg" alt="Streamer Name">
+                                <div class="portrait-animation"></div>
+                            </div>
+                            <div class="portrait-glow" style="--faculty-color: #ff6b00;"></div>
+                        </div>
+                        <div class="streamer-info">
+                            <h3 class="streamer-name">PhoenixRise</h3>
+                            <p class="streamer-nick">@phoenix_rise_tv</p>
+                            <div class="faculty-badge" style="--badge-color: #ff6b00;">
+                                <span>🔥</span> Огненные Фениксы
+                            </div>
+                            <div class="games-list">
+                                <span class="game-tag">Dota 2</span>
+                                <span class="game-tag">LoL</span>
+                            </div>
+                            <div class="streamer-stats">
+                                <div class="stat-item">
+                                    <span class="stat-icon">💎</span>
+                                    <span class="stat-value">1,580</span>
+                                    <span class="stat-label">очков</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🔥</span>
+                                    <span class="stat-value">68%</span>
+                                    <span class="stat-label">поп.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🎯</span>
+                                    <span class="stat-value">540</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link twitch" title="Twitch">📺</a>
+                                <a href="#" class="social-link youtube" title="YouTube">▶️</a>
+                                <a href="#" class="social-link telegram" title="Telegram">✈️</a>
+                            </div>
+                            <button class="support-btn magic-glow">
+                                <span>✨</span> Поддержать
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Streamer Card 6 -->
+                    <div class="streamer-card portrait-frame" data-faculty="mint" data-games="fc2026,cs2">
+                        <div class="frame-ornament"></div>
+                        <div class="portrait-container">
+                            <div class="portrait-image">
+                                <img src="assets/streamers/streamer-placeholder.svg" alt="Streamer Name">
+                                <div class="portrait-animation"></div>
+                            </div>
+                            <div class="portrait-glow" style="--faculty-color: #00ff88;"></div>
+                        </div>
+                        <div class="streamer-info">
+                            <h3 class="streamer-name">JadeDragon</h3>
+                            <p class="streamer-nick">@jade_dragon_live</p>
+                            <div class="faculty-badge" style="--badge-color: #00ff88;">
+                                <span>🐉</span> Нефритовые Драконы
+                            </div>
+                            <div class="games-list">
+                                <span class="game-tag">FC2026</span>
+                                <span class="game-tag">CS2</span>
+                            </div>
+                            <div class="streamer-stats">
+                                <div class="stat-item">
+                                    <span class="stat-icon">💎</span>
+                                    <span class="stat-value">1,340</span>
+                                    <span class="stat-label">очков</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🔥</span>
+                                    <span class="stat-value">62%</span>
+                                    <span class="stat-label">поп.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-icon">🎯</span>
+                                    <span class="stat-value">420</span>
+                                    <span class="stat-label">ставок</span>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link twitch" title="Twitch">📺</a>
+                                <a href="#" class="social-link youtube" title="YouTube">▶️</a>
+                                <a href="#" class="social-link telegram" title="Telegram">✈️</a>
+                            </div>
+                            <button class="support-btn magic-glow">
+                                <span>✨</span> Поддержать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more-container">
+                    <button class="load-more-btn magic-glow">
+                        <span>📜</span> Показать ещё стримеров
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Factions Section -->
+        <section class="factions-section section-reveal" id="factions">
+            <div class="section-bg dark-castle-texture"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Распределение Фракций</h2>
+                    <p class="section-subtitle">Интерактивная карта баланса сил между факультетами</p>
+                </div>
+
+                <!-- Factions Visualization -->
+                <div class="factions-visualization">
+                    <!-- Central Academy Emblem -->
+                    <div class="academy-center">
+                        <div class="academy-emblem">
+                            <span class="emblem-glow"></span>
+                            <span class="emblem-icon">🏰</span>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Nodes -->
+                    <div class="faculty-nodes">
+                        <div class="faculty-node" data-faculty="crimson" style="--angle: 0deg; --node-color: #740001;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🦁</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Багряные Львы</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-node" data-faculty="emerald" style="--angle: 45deg; --node-color: #1a472a;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🐍</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Изумрудные Змеи</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-node" data-faculty="sapphire" style="--angle: 90deg; --node-color: #0e1a40;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🦅</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Сапфировые Орлы</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-node" data-faculty="golden" style="--angle: 135deg; --node-color: #ecb939;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🦡</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Золотые Барсуки</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-node" data-faculty="violet" style="--angle: 180deg; --node-color: #5d00ff;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🐦‍⬛</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Аметистовые Вороны</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-node" data-faculty="orange" style="--angle: 225deg; --node-color: #ff6b00;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🔥</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Огненные Фениксы</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-node" data-faculty="mint" style="--angle: 270deg; --node-color: #00ff88;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🐉</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Нефритовые Драконы</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-node" data-faculty="pink" style="--angle: 315deg; --node-color: #ff0080;">
+                            <div class="node-connection"></div>
+                            <div class="node-emblem">
+                                <span class="node-icon">🦄</span>
+                            </div>
+                            <div class="node-info">
+                                <span class="node-name">Розовые Единороги</span>
+                                <span class="node-count">5 стримеров</span>
+                            </div>
+                            <div class="node-streamers">
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                                <div class="mini-avatar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Balance Bars -->
+                <div class="power-balance">
+                    <h3 class="balance-title">Баланс Магических Сил</h3>
+                    <div class="balance-bars">
+                        <div class="balance-bar" data-faculty="crimson">
+                            <div class="bar-label">
+                                <span class="bar-icon">🦁</span>
+                                <span class="bar-name">Багряные Львы</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #740001; --bar-width: 85%;"></div>
+                            </div>
+                            <span class="bar-value">17%</span>
+                        </div>
+                        <div class="balance-bar" data-faculty="emerald">
+                            <div class="bar-label">
+                                <span class="bar-icon">🐍</span>
+                                <span class="bar-name">Изумрудные Змеи</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #1a472a; --bar-width: 78%;"></div>
+                            </div>
+                            <span class="bar-value">15%</span>
+                        </div>
+                        <div class="balance-bar" data-faculty="sapphire">
+                            <div class="bar-label">
+                                <span class="bar-icon">🦅</span>
+                                <span class="bar-name">Сапфировые Орлы</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #0e1a40; --bar-width: 72%;"></div>
+                            </div>
+                            <span class="bar-value">14%</span>
+                        </div>
+                        <div class="balance-bar" data-faculty="golden">
+                            <div class="bar-label">
+                                <span class="bar-icon">🦡</span>
+                                <span class="bar-name">Золотые Барсуки</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #ecb939; --bar-width: 65%;"></div>
+                            </div>
+                            <span class="bar-value">13%</span>
+                        </div>
+                        <div class="balance-bar" data-faculty="violet">
+                            <div class="bar-label">
+                                <span class="bar-icon">🐦‍⬛</span>
+                                <span class="bar-name">Аметистовые Вороны</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #5d00ff; --bar-width: 58%;"></div>
+                            </div>
+                            <span class="bar-value">12%</span>
+                        </div>
+                        <div class="balance-bar" data-faculty="orange">
+                            <div class="bar-label">
+                                <span class="bar-icon">🔥</span>
+                                <span class="bar-name">Огненные Фениксы</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #ff6b00; --bar-width: 52%;"></div>
+                            </div>
+                            <span class="bar-value">11%</span>
+                        </div>
+                        <div class="balance-bar" data-faculty="mint">
+                            <div class="bar-label">
+                                <span class="bar-icon">🐉</span>
+                                <span class="bar-name">Нефритовые Драконы</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #00ff88; --bar-width: 45%;"></div>
+                            </div>
+                            <span class="bar-value">9%</span>
+                        </div>
+                        <div class="balance-bar" data-faculty="pink">
+                            <div class="bar-label">
+                                <span class="bar-icon">🦄</span>
+                                <span class="bar-name">Розовые Единороги</span>
+                            </div>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="--bar-color: #ff0080; --bar-width: 38%;"></div>
+                            </div>
+                            <span class="bar-value">9%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rules Section -->
+        <section class="rules-section section-reveal" id="rules">
+            <div class="section-bg book-texture"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Правила Турнира</h2>
+                    <p class="section-subtitle">Свод магических законов и положений</p>
+                </div>
+
+                <div class="rules-book">
+                    <div class="book-page left-page">
+                        <h3 class="chapter-title">Глава I: Основы</h3>
+                        <div class="rule-item">
+                            <span class="rule-number">§1</span>
+                            <p>Турнир проводится среди 8 факультетов, каждый из которых представлен командой стримеров.</p>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-number">§2</span>
+                            <p>Очки начисляются за победы в матчах, выполнение заданий и активность аудитории.</p>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-number">§3</span>
+                            <p>Турнир длится 30 дней. Победителем становится факультет с наибольшим количеством очков.</p>
+                        </div>
+
+                        <h3 class="chapter-title">Глава II: Игры</h3>
+                        <div class="rule-item">
+                            <span class="rule-number">§4</span>
+                            <p>Официальные дисциплины: CS2, Dota 2, Valorant, League of Legends, FC2026.</p>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-number">§5</span>
+                            <p>За каждую победу начисляется от 100 до 500 очков в зависимости от уровня соперника.</p>
+                        </div>
+                    </div>
+                    <div class="book-spine"></div>
+                    <div class="book-page right-page">
+                        <h3 class="chapter-title">Глава III: Ставки</h3>
+                        <div class="rule-item">
+                            <span class="rule-number">§6</span>
+                            <p>Ставки принимаются на победу факультета, топ-3, отдельные матчи и специальные события.</p>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-number">§7</span>
+                            <p>Коэффициенты обновляются в реальном времени на основе текущих результатов.</p>
+                        </div>
+
+                        <h3 class="chapter-title">Глава IV: Призы</h3>
+                        <div class="rule-item">
+                            <span class="rule-number">§8</span>
+                            <p>Общий призовой фонд: 10,000,000 ₽</p>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-number">§9</span>
+                            <p>1 место — 4,000,000 ₽<br>2 место — 2,500,000 ₽<br>3 место — 1,500,000 ₽</p>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-number">§10</span>
+                            <p>Специальные призы для лучших стримеров каждого факультета.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="magic-footer">
+        <div class="footer-bg stone-dark-texture"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/betboom-logo.svg" alt="BetBoom" class="footer-logo">
+                    <p class="footer-tagline">Магия ставок и киберспорта</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Турнир</h4>
+                        <ul>
+                            <li><a href="#results">Результаты</a></li>
+                            <li><a href="#streamers">Стримеры</a></li>
+                            <li><a href="#factions">Фракции</a></li>
+                            <li><a href="#rules">Правила</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ставки</h4>
+                        <ul>
+                            <li><a href="#bets">Сделать ставку</a></li>
+                            <li><a href="#">Коэффициенты</a></li>
+                            <li><a href="#">История ставок</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Связаться с нами</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="age-restriction">
+                    <div class="age-badge">18+</div>
+                    <p>Участие в азартных играх разрешено только лицам, достигшим 18 лет. Азартные игры могут вызывать зависимость. Играйте ответственно.</p>
+                </div>
+                <div class="legal-info">
+                    <p>&copy; 2026 BetBoom. Все права защищены.</p>
+                    <p>Лицензия ФНС России № 1234567890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

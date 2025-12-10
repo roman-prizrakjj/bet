@@ -1,0 +1,703 @@
+/* ==========================================================================
+   BetBoom Streamers Battle 2026 - Responsive Styles
+   Mobile-First Approach
+   ========================================================================== */
+
+/* Extra Large Devices (1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .vessels-showcase {
+        gap: var(--spacing-lg);
+    }
+    
+    .vessel {
+        width: 70px;
+        height: 140px;
+    }
+    
+    .vessel-glass {
+        width: 60px;
+        height: 100px;
+    }
+}
+
+/* Large Devices (1200px to 1399px) */
+@media (max-width: 1399px) {
+    .factions-visualization {
+        height: 500px;
+    }
+    
+    .faculty-node {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-180px) rotate(calc(-1 * var(--angle)));
+    }
+    
+    .faculty-node:hover {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-190px) rotate(calc(-1 * var(--angle))) scale(1.1);
+    }
+}
+
+/* Medium Large Devices (992px to 1199px) */
+@media (max-width: 1199px) {
+    :root {
+        --spacing-xl: 3rem;
+        --spacing-xxl: 4rem;
+    }
+    
+    .vessels-showcase {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .bets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .streamers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .rules-book {
+        flex-direction: column;
+    }
+    
+    .book-spine {
+        width: 100%;
+        height: 10px;
+    }
+    
+    .left-page {
+        border-right: none;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+}
+
+/* Tablets (768px to 991px) */
+@media (max-width: 991px) {
+    /* Navigation */
+    .main-nav {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: flex;
+    }
+    
+    /* Hero */
+    .hero-section {
+        padding-top: calc(var(--spacing-xxl) + 60px);
+    }
+    
+    .vessels-showcase {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+    }
+    
+    .vessel {
+        width: 50px;
+        height: 100px;
+    }
+    
+    .vessel-glass {
+        width: 40px;
+        height: 70px;
+        bottom: 15px;
+    }
+    
+    .vessel-base {
+        width: 45px;
+        height: 20px;
+    }
+    
+    .vessel-info .faculty-name {
+        font-size: 0.6rem;
+    }
+    
+    .vessel-info .faculty-rank,
+    .vessel-info .faculty-score {
+        font-size: 0.55rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    /* Results Table */
+    .parchment-scroll {
+        display: none;
+    }
+    
+    .results-cards-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    /* Factions */
+    .factions-visualization {
+        height: 400px;
+    }
+    
+    .faculty-node {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-140px) rotate(calc(-1 * var(--angle)));
+    }
+    
+    .faculty-node:hover {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-150px) rotate(calc(-1 * var(--angle))) scale(1.1);
+    }
+    
+    .node-emblem {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .node-icon {
+        font-size: 1.5rem;
+    }
+    
+    .academy-emblem {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .emblem-icon {
+        font-size: 2.5rem;
+    }
+    
+    .balance-bar {
+        grid-template-columns: 150px 1fr 40px;
+    }
+    
+    .bar-name {
+        font-size: 0.75rem;
+    }
+    
+    /* Footer */
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .legal-info {
+        text-align: center;
+    }
+}
+
+/* Small Tablets / Large Phones (576px to 767px) */
+@media (max-width: 767px) {
+    :root {
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --spacing-xxl: 3rem;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    /* Header */
+    .header-content {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .logo-img {
+        height: 32px;
+    }
+    
+    /* Hero */
+    .vessels-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    .vessel {
+        width: 60px;
+        height: 110px;
+    }
+    
+    .vessel-glass {
+        width: 50px;
+        height: 80px;
+    }
+    
+    .vessel-base {
+        width: 50px;
+    }
+    
+    .candles-left,
+    .candles-right {
+        display: none;
+    }
+    
+    /* Sections */
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    /* Bets */
+    .bets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bet-card .card-inner {
+        padding: var(--spacing-md);
+    }
+    
+    .faculty-emblem {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .emblem-icon {
+        font-size: 2rem;
+    }
+    
+    .odds-value {
+        font-size: 1.5rem;
+    }
+    
+    .popular-bets-widget {
+        padding: var(--spacing-md);
+    }
+    
+    .popular-bet-item {
+        flex-wrap: wrap;
+    }
+    
+    .bet-name {
+        flex-basis: 100%;
+        order: 1;
+        margin-top: var(--spacing-xs);
+    }
+    
+    /* Streamers */
+    .streamers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .streamers-filter {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: var(--spacing-sm);
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .filter-chip {
+        flex-shrink: 0;
+    }
+    
+    /* Factions */
+    .factions-visualization {
+        height: 350px;
+    }
+    
+    .faculty-node {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-110px) rotate(calc(-1 * var(--angle)));
+    }
+    
+    .faculty-node:hover {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-115px) rotate(calc(-1 * var(--angle))) scale(1.05);
+    }
+    
+    .node-emblem {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .node-icon {
+        font-size: 1.25rem;
+    }
+    
+    .node-name {
+        font-size: 0.6rem;
+    }
+    
+    .node-count {
+        display: none;
+    }
+    
+    .node-streamers {
+        display: none;
+    }
+    
+    .academy-emblem {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .emblem-icon {
+        font-size: 2rem;
+    }
+    
+    .balance-bar {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xs);
+    }
+    
+    .bar-label {
+        justify-content: space-between;
+    }
+    
+    .bar-value {
+        display: none;
+    }
+    
+    .bar-label::after {
+        content: attr(data-value);
+        font-family: var(--font-display);
+        font-size: 0.85rem;
+        color: var(--color-gold);
+    }
+    
+    /* Rules */
+    .book-page {
+        padding: var(--spacing-lg);
+    }
+    
+    .chapter-title {
+        font-size: 1.1rem;
+    }
+    
+    .rule-item {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    /* Footer */
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+    
+    .age-restriction {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Extra Small Devices / Phones (below 576px) */
+@media (max-width: 575px) {
+    :root {
+        --spacing-md: 0.75rem;
+        --spacing-lg: 1rem;
+    }
+    
+    /* Typography */
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    
+    /* Hero */
+    .hero-title .title-line.accent {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .vessels-showcase {
+        padding: var(--spacing-sm);
+    }
+    
+    .vessel-info .faculty-name {
+        font-size: 0.55rem;
+    }
+    
+    .cta-button {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.85rem;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    /* Controls */
+    .results-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.75rem;
+    }
+    
+    .export-btn {
+        justify-content: center;
+    }
+    
+    /* Cards */
+    .streamer-card .streamer-info {
+        padding: var(--spacing-md);
+    }
+    
+    .streamer-name {
+        font-size: 1.1rem;
+    }
+    
+    .streamer-stats {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+    
+    .stat-item {
+        flex-basis: calc(33% - var(--spacing-sm));
+    }
+    
+    /* Factions - Switch to List View */
+    .factions-visualization {
+        display: none;
+    }
+    
+    .power-balance {
+        margin-top: 0;
+    }
+    
+    /* Warning */
+    .age-warning {
+        padding: var(--spacing-sm);
+    }
+    
+    .warning-badge {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .warning-text {
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile Results Cards */
+.results-cards-mobile {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .results-cards-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .result-card-mobile {
+        background: rgba(10, 26, 42, 0.8);
+        border: 2px solid rgba(212, 175, 55, 0.2);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-md);
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: var(--spacing-md);
+        align-items: center;
+    }
+    
+    .result-card-mobile .rank-shield {
+        width: 35px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .result-card-mobile .faculty-info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .result-card-mobile .faculty-cell {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    .result-card-mobile .score-section {
+        text-align: right;
+    }
+    
+    .result-card-mobile .score-value {
+        font-size: 1.1rem;
+    }
+    
+    .result-card-mobile .trend-indicator {
+        font-size: 0.8rem;
+        justify-content: flex-end;
+    }
+    
+    .result-card-mobile .streamers-avatars {
+        margin-top: var(--spacing-sm);
+        grid-column: 1 / -1;
+        padding-top: var(--spacing-sm);
+        border-top: 1px solid rgba(212, 175, 55, 0.1);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .cta-button:hover,
+    .bet-card:hover,
+    .streamer-card:hover,
+    .faculty-node:hover {
+        transform: none;
+    }
+    
+    .cta-button:active {
+        transform: scale(0.98);
+    }
+    
+    .bet-card:active,
+    .streamer-card:active {
+        transform: scale(0.99);
+    }
+    
+    .nav-link::before {
+        display: none;
+    }
+    
+    .nav-link.active {
+        color: var(--color-gold);
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .vessel-glass {
+        border-width: 1px;
+    }
+    
+    .card-border {
+        border-width: 1px;
+    }
+}
+
+/* Dark Mode Preference (already dark, but ensure consistency) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-dark: #0a1a2a;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .magic-header,
+    .burger-menu,
+    .mobile-menu,
+    .mobile-menu-overlay,
+    .magic-particles,
+    .hero-cta,
+    .scroll-indicator,
+    .cta-button,
+    .bet-button,
+    .support-btn,
+    .load-more-btn,
+    .export-btn,
+    .filter-group,
+    .streamers-filter,
+    .factions-visualization,
+    .magic-footer {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: 2rem;
+    }
+    
+    section {
+        break-inside: avoid;
+        padding: 1rem 0;
+    }
+    
+    .section-title,
+    .hero-title,
+    h1, h2, h3, h4 {
+        color: black;
+    }
+    
+    .parchment-scroll {
+        border: 1px solid #ccc;
+        background: white;
+    }
+    
+    .results-table th,
+    .results-table td {
+        border: 1px solid #ddd;
+    }
+}
+
+/* Landscape Phones */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+    
+    .vessels-showcase {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .hero-cta {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .cta-button {
+        max-width: none;
+        width: auto;
+    }
+}
+
+/* Notch Safe Areas (iOS) */
+@supports (padding: max(0px)) {
+    .magic-header {
+        padding-left: max(var(--spacing-lg), env(safe-area-inset-left));
+        padding-right: max(var(--spacing-lg), env(safe-area-inset-right));
+    }
+    
+    .container {
+        padding-left: max(var(--spacing-lg), env(safe-area-inset-left));
+        padding-right: max(var(--spacing-lg), env(safe-area-inset-right));
+    }
+    
+    .magic-footer {
+        padding-bottom: max(var(--spacing-lg), env(safe-area-inset-bottom));
+    }
+}
